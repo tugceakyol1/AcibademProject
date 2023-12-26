@@ -1,17 +1,17 @@
-package pages;
+package pages.menuButton;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class TibbiDanismaButton {
+public class IlgiAlanlariButton {
 
-    public TibbiDanismaButton(){
+    public IlgiAlanlariButton() {
 
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "")
-    public WebElement iehwe;
+    public WebElement kedjke;
 }
