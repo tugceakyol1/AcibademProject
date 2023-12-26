@@ -1,17 +1,17 @@
-package pages;
+package pages.menuButton;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class DoktorlarButton {
+public class GenelDoktorBasvurusuButton {
 
-    public DoktorlarButton(){
+    public GenelDoktorBasvurusuButton() {
 
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "")
-    public WebElement asasa;
+    public WebElement rlrl;
 }
