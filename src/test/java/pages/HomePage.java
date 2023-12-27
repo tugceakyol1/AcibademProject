@@ -17,4 +17,7 @@ public class HomePage {
 
     @FindBy(xpath = "//a[.='İLETİŞİM']")
     public  WebElement homePageIletisimButton;
+
+    @FindBy(xpath="//a[.='FOR INTERNATIONAL PATIENTS']")
+    public WebElement homePageForIntPatients;
 }
