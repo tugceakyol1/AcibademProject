@@ -1,17 +1,17 @@
-package pages;
+package pages.menuButton;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class MedikalTeknolojilerButton {
+public class DoktorlarButton {
 
-    public MedikalTeknolojilerButton(){
+    public DoktorlarButton(){
 
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "")
-    public WebElement rlef;
+    public WebElement asasa;
 }
