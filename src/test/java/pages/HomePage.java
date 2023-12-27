@@ -14,4 +14,7 @@ public class HomePage {
 
     @FindBy(xpath = "//div[@class='menu']")
     public WebElement homePageMenuButton;
+
+    @FindBy(xpath = "//a[.='İLETİŞİM']")
+    public  WebElement homePageIletisimButton;
 }
