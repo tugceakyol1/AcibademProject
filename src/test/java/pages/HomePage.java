@@ -16,8 +16,13 @@ public class HomePage {
     public WebElement homePageMenuButton;
 
     @FindBy(xpath = "//a[.='İLETİŞİM']")
-    public  WebElement homePageIletisimButton;
+
+    public static WebElement homePageIletisimButton;
+
+
+    public  WebElement homePageIletisimButton2;
 
     @FindBy(xpath="//a[.='FOR INTERNATIONAL PATIENTS']")
     public WebElement homePageForIntPatients;
+
 }
