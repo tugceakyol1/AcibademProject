@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import javax.swing.text.html.HTML;
+
 public class IletisimPage {
 
     public  IletisimPage(){
@@ -45,6 +47,46 @@ public class IletisimPage {
 
     @FindBy(id = "MedicalAdviceContactForm_EtkStatus")
     public WebElement checkbox2;
+
+    @FindBy(xpath = "//span[.='BİREYSEL']")
+    public static WebElement bireyselHeader;
+
+    @FindBy(xpath = "//div[.='YATIRIMCI']")
+    public WebElement yatirimciHeader;
+
+    @FindBy(xpath ="//input[@id='ContactForm_Firstname']")
+    public WebElement contactName;
+
+    @FindBy (id = "ContactForm_Lastname")
+    public WebElement contactSurName;
+
+    @FindBy(id = "ContactForm_Email")
+    public WebElement contactEmail;
+
+    @FindBy(xpath = "//input[@id='ContactForm_Phone']")
+    public WebElement contactTelNumber;
+
+    @FindBy(id = "ContactForm_Message")
+    public WebElement contactMassageBox;
+
+    @FindBy(xpath = "//input[@id='KvkkBireysel']")
+    public WebElement FirstCheckIn;
+
+    @FindBy(id = "EtkBireysel")
+    public WebElement secondCheckIn;
+
+    @FindBy(id = "ContactForm_SecurityCode")
+    public WebElement securityCodeBox;
+
+    @FindBy(id = "acibademcaptchaBireysel")
+    public WebElement numericCaptcha;
+
+    @FindBy(xpath = "//form[@id='personalContactForm']/button[.='GÖNDER']")
+    public WebElement contactSubmitBtn;
+
+    @FindBy(xpath = "//a[contains(.,'İletişim Formları')]")
+    public static WebElement contactFormsPage;
+
 
 
 
