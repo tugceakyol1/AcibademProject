@@ -97,20 +97,24 @@ public class US06a_StepDefinitions {
     }
 
     @And("the user enters a five-digit SecurityCode into the Guvenlik Kodu field")
-    public void theUserEntersAFiveDigitSecurityCodeIntoTheGuvenlikKoduField() {
-        // Use JavaScriptExecutor to scroll the element into view
+    public void theUserEntersAFiveDigitSecurityCodeIntoTheGuvenlikKoduField() throws InterruptedException {
+
+        Thread.sleep(9999);
+
         JavascriptExecutor jsexecutor = (JavascriptExecutor) Driver.getDriver();
-        jsexecutor.executeScript("arguments[0].scrollIntoView(true);", iletisimPage.securityCodeBox);
+        jsexecutor.executeScript("arguments[0].scrollIntoView(true);", iletisimPage.numericCaptcha);
         waitFor(4);
         String  numericCaptchaText =iletisimPage.numericCaptcha.getText();
-        waitFor(4);
+        waitFor(10);
         iletisimPage.securityCodeBox.sendKeys(numericCaptchaText);
+        waitFor(10);
 
     }
 
 
     @When("the user clicks on the Gonder button")
     public void the_user_clicks_on_the_gonder_button() {
+        iletisimPage.contactSubmitBtn.click();
 
     }
 
