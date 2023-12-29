@@ -7,6 +7,7 @@ import pages.ForIntPatientsPage;
 import pages.HomePage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class US08_StepDefinitions {
 
@@ -23,6 +24,7 @@ public class US08_StepDefinitions {
 
     @Then("Click on for international patiens")
     public void clickOnForInternationalPatiens() {
+        ReusableMethods.waitFor(2);
         homePage.homePageForIntPatients.click();
     }
 
