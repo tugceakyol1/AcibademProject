@@ -60,10 +60,10 @@ public class IletisimPage {
     @FindBy (id = "ContactForm_Lastname")
     public WebElement contactSurName;
 
-    @FindBy(id = "ContactForm_Email")
+    @FindBy(id="ContactForm_Email")
     public WebElement contactEmail;
 
-    @FindBy(xpath = "//input[@id='ContactForm_Phone']")
+    @FindBy(id = "ContactForm_Phone")
     public WebElement contactTelNumber;
 
     @FindBy(id = "ContactForm_Message")
@@ -86,6 +86,21 @@ public class IletisimPage {
 
     @FindBy(xpath = "//a[contains(.,'İletişim Formları')]")
     public static WebElement contactFormsPage;
+
+    @FindBy(xpath = "//p[contains(.,'Talebiniz alınmıştır. Çağrı Merkezi Yetkilillerimiz size en kısa süre içinde dön')]")
+    public WebElement messageSent;
+
+    @FindBy(id = "ContactForm_Firstname-error")
+    public WebElement firstNameErrorMessage;
+
+    @FindBy(css=".field-validation-error")
+    public WebElement surNameErrorMessage;
+
+    @FindBy(id = "ContactForm_Email-error")
+    public WebElement emailErrorMessage;
+
+    @FindBy(css = ".field-validation-error")
+    public WebElement emailValidationErrorMsg;
 
 
 
