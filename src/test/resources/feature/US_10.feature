@@ -1,3 +1,4 @@
+@US10_Passed_scenarios
 Feature: Acibadem contact medical advice feature
 
   Background: The user is on the Medical Advice option on the Contact page
