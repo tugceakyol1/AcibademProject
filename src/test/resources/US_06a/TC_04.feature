@@ -9,7 +9,7 @@
       And  the user confirms that they are in the BIREYSEL section
       And the user enters "Name" into the Adiniz field
       And the user enters "Surname" into the Soyadiniz  field
-      And the 'E-Posta Adresiniz'  field is left blank
+     # And the 'E-Posta Adresiniz'  field is left blank
       And the user enters "PhoneNumber" into the Telefon Numaraniz field
       And the user enters "Message" into the Mesajiniz field
       And the user clicks on the existing check-in buttons (optional)

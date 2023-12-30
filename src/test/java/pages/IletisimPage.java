@@ -51,9 +51,6 @@ public class IletisimPage {
     @FindBy(xpath = "//span[.='BİREYSEL']")
     public static WebElement bireyselHeader;
 
-    @FindBy(xpath = "//div[.='YATIRIMCI']")
-    public WebElement yatirimciHeader;
-
     @FindBy(xpath ="//input[@id='ContactForm_Firstname']")
     public WebElement contactName;
 
@@ -67,7 +64,7 @@ public class IletisimPage {
     public WebElement contactTelNumber;
 
     @FindBy(id = "ContactForm_Message")
-    public WebElement contactMassageBox;
+    public WebElement contactMessageBox;
 
     @FindBy(xpath = "//input[@id='KvkkBireysel']")
     public WebElement FirstCheckIn;
@@ -101,6 +98,53 @@ public class IletisimPage {
 
     @FindBy(css = ".field-validation-error")
     public WebElement emailValidationErrorMsg;
+
+    @FindBy(id = "ContactForm_Phone-error")
+    public WebElement phoneErrorMessage;
+
+    @FindBy(css = ".field-validation-error")
+    public WebElement messageBoxErrorMsg;
+
+    @FindBy(id = "ContactForm_SecurityCode-error")
+    public WebElement securityCodeErrorMsg;
+
+    @FindBy(xpath = "//div[.='YATIRIMCI']")
+    public WebElement yatirimciHeader;
+
+    @FindBy(xpath = "//form[@id='yatirimciContactForm']//span[.='Adınız']")
+    public WebElement yatirimciName;
+
+    @FindBy(id = "InvestorContactForm_Lastname")
+    public WebElement yatirimciSurName;
+
+    @FindBy(id = "InvestorContactForm_Email")
+   public WebElement yatirimciEmailBox;
+
+    @FindBy(xpath = "//form[@id='yatirimciContactForm']//span[.='Telefon Numaranız']")
+    public WebElement yatirimciPhoneBox;
+
+    @FindBy(id = "InvestorContactForm_Message")
+    public WebElement yatirimciMessageBox;
+
+    @FindBy(xpath = "//form[@id='yatirimciContactForm']/label[6]/i[@class='user-layout']")
+    public WebElement firstYatirimciCheckinBox;
+
+    @FindBy(xpath = "//form[@id='yatirimciContactForm']/label[7]/i[@class='user-layout']")
+    public WebElement secondYatirimciCheckInBox;
+
+    @FindBy(xpath = "//form[@id='yatirimciContactForm']/label[@class='block left security']/span[@class='placeholder']")
+    public WebElement yatirimciSecurityCodeBox;
+
+    @FindBy(xpath = "//form[@id='yatirimciContactForm']/button[.='GÖNDER']")
+    public WebElement yatirimciSubmitButton;
+
+    @FindBy(xpath = "//div[@class='fancybox-content']/h2[.='Teşekkürler!']")
+    public WebElement yatirimciSubmitionMessage;
+
+
+
+
+
 
 
 
